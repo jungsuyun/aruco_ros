@@ -236,6 +236,7 @@ public:
 
           std::stringstream ss;
           ss << markers[i].id;
+          ROS_INFO("%s", ss.str());
 
           tf::StampedTransform stampedTransform(transform, curr_stamp,
                                                 reference_frame, ss.str());
